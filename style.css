@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat|CantoraOne|IBM+Plex+Mono");
+@font-face {
+  font-family: AstroSpace;
+  src: url(/fonts/AstroSpace.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #0B0F24;
+}
+header {
+  background-color: #141b25;
+}
+.main-nav {
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  z-index: 1030;
+  height: 90px;
+  background: rgba(18, 16, 16, 0.35);
+  backdrop-filter: blur(9px);
+}
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "AstroSpace", sans-serif;
+}
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+  position: relative;
+}
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+.navlinks li a:hover {
+  color: #7ebcb9;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #7ebcb9;
+}
+
+#check {
+  display: none;
+}
+.menu-btn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #222831;
+  }
+  .navlinks li {
+    display: block;
+  }
+  .navlinks li a {
+    font-size: 20px;
+  }
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+}
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .menu-btn:focus {
+    color: blue;
+  }
+}
+
+/* .login-icon{
+    width: 10px;
+    height: 10px;
+} */
+
+#login{
+    width: 50px;
+    height: 50px;
+}
+
+.learn-git{
+    position: static;
+    width: 330px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'CantoraOne', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 39px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    margin: 6px 0px;
+}
+
+.hero-githunt{
+    position: static;
+    width: 458px;
+    height: 111px;
+    left: 0px;
+    top: 64px;
+    font-family: 'CantoraOne', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 118px;
+    line-height: 147px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+
+.start-learn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: static;
+    width: 242px;
+    height: 51px;
+    left: 159.5px;
+    top: 226px;
+
+    color: #FFFFFF;
+    font-size: 24px;
+    background: #2DA44E;
+    border-radius: 10px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 20px 0px 20px 70px;
+}
+
+.container{
+    padding: 15%;
+    position: relative;
+    height: 530px;
+    
+    background: #0B0F24;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    background: url(Images/bg.png);
+    background-size: contain;
+}
+
+#hero::after {
+    background: url("path/to/curve.svg") center bottom no-repeat;
+    content: '';
+    height: 103px;
+    position: absolute;
+    top: 100%;
+    transform: rotateX(180deg);
+}
+
+#about{
+    background-color: #FFFFFF;
+}
+
+#hero img{
+    height: 530px;
+    width: 463px;
+    left: 850px;
+    top: 195px;
+    border-radius: 0px;
+}
+
+#curve{
+  width: 100%;
+  height: 500%;
+}
+
+.gradient-heading{
+  background: conic-gradient(from 174.6deg at 41.16% 64.86%, #DB469F -5.68deg, #2188FF 168.42deg, #DB469F 354.32deg, #2188FF 528.42deg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  position: static;
+  width: 395px;
+  height: 80px;
+  left: 522.5px;
+  bottom: 595px;
+
+  font-family: 'CantoraOne', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 80px;
+
+  display: flex;
+  align-items: center;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 96px 30%;
+}
+
+p{
+  position: static;
+  width: 1050px;
+  height: 304px;
+  left: 195px;
+  top: 371px;
+
+  font-family: 'IBM Plex Mono',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 96px 0px;
+}
+
+#rules h2{
+  position: static;
+  width: 145px;
+  height: 80px;
+  left: -211px;
+  top: 226px;
+
+  font-family: 'CantoraOne', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 80px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#rules{
+  display: flex;
+  justify-content: space-between;
+  background: url(Images/bluepaint.png);
+  background-size: cover;
+}
+
+#rules p{
+  position: static;
+  width: 829px;
+  height: 532px;
+  left: 124px;
+  top: 0px;
+
+  font-family: 'IBM Plex Mono',serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: left;
+
+  letter-spacing: -0.03em;
+
+  color: #FFFFFF;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 190px;
+}
+
+#faq{
+  background: url(Images/bluedots.png);
+}
