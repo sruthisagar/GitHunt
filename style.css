@@ -7,10 +7,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: #0B0F24;
+  font-family: 'Cantora One',sans-serif;
+  background-color: #0B0F24;  
 }
-header {
+header {  
   background-color: #141b25;
 }
 .main-nav {
@@ -126,7 +126,7 @@ header {
     left: 0px;
     top: 0px;
     color: #ffffff;
-    font-family: 'CantoraOne', serif;
+    font-family:'Cantora One',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 39px;
@@ -142,16 +142,17 @@ header {
     height: 111px;
     left: 0px;
     top: 64px;
-    font-family: 'CantoraOne', serif;
+    font-family: 'Cantora One',sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 118px;
+    font-size: 100px;
     line-height: 147px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
 
-    flex: none;
+    justify-content: center;
+    /* flex: none; */
     order: 1;
     flex-grow: 0;
     margin: 6px 0px;
@@ -223,17 +224,18 @@ header {
 }
 
 .gradient-heading{
-  background: conic-gradient(from 174.6deg at 41.16% 64.86%, #DB469F -5.68deg, #2188FF 168.42deg, #DB469F 354.32deg, #2188FF 528.42deg);
-  /* -webkit-text-fill-color: transparent; */
-  /* -webkit-background-clip: text; */
-
+  background: rgb(33,136,255);
+  background: linear-gradient(157deg, rgba(33,136,255,1) 0%, rgba(219,70,159,1) 100%); 
+  -webkit-text-fill-color: transparent; 
+   -webkit-background-clip: text;
+/*
   position: static;
   /* width: 395px; */
   height: 80px;
   left: 522.5px;
   bottom: 595px;
 
-  font-family: 'CantoraOne', serif;
+  font-family: 'Cantora One',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
@@ -255,7 +257,7 @@ p{
   left: 195px;
   top: 371px;
 
-  font-family: 'IBM Plex Mono',serif;
+  font-family: 'IBM Plex Mono',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -279,7 +281,7 @@ p{
   left: -211px;
   /* top: 226px; */
 
-  font-family: 'CantoraOne', serif;
+  font-family: 'Cantora One',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
@@ -306,7 +308,7 @@ p{
   left: 124px;
   top: 0px;
 
-  font-family: 'IBM Plex Mono',serif;
+  font-family: 'IBM Plex Mono',sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -325,40 +327,39 @@ p{
 
 #faq{
   background: url(Images/bluedots.png);
-  background-size: cover;
+  background-size: contain;
 }
 
-/* body {
+body {
   padding:0;
   margin:0;
   background:#131617;
   overflow-x: hidden;
-} */
-/* .main-section {
+}
+ .main-section {
   float: left;
   width: 100%;
   display: block;
-  background: #0A192F;
-  height: 100vh;
+
 }
 .container {
     float: left;
-    width: 80%;
-    margin: 2rem 10%;
+    width: 75%;
+    /* margin: 2rem; */
 }
 .fullwidth-container {display:block;width:80%;margin:2rem 10%}
 #faqs {}
 .line-heading {
-  font-family: sans-serif;
+  font-family: 'Cantora One',sans-serif;
   color: #ccd6f6;
   font-weight: 600;
   line-height: 1.1;
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 10px 0 40px 10%;
   white-space: nowrap;
-  font-size: 26px;
+  font-size: 30px;
   text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 .line-heading:after {
@@ -376,17 +377,9 @@ p{
   width: 180px;
   background: rgba(204,214,246,.6);
 }
-h3.large-heading {
-  font-family: sans-serif;
-  margin: 0 0 0 10%;
-  font-size: 52px;
-  line-height: 1.1;
-  letter-spacing: -.045em;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgb(0 0 0);
-}
+
 /** The Faq Section **/
-/*    #faqSection div {
+    #faqSection div {
   float: left;
   display: inline-block;
   width: 46%;
@@ -444,32 +437,17 @@ h3.large-heading {
   font-size: .85rem;
   line-height: 160%;
   font-weight: 200;
-  margin: 8px 0 8px 2%;
+  margin:2%;
   list-style: none;
   width: 90%;
   font-family: sans-serif;
   text-shadow: 1px 1px 0 rgb(0 0 0);
 }
-.myFooter {
-  float: left;
-  width: 100%;
-  display: block;
-  background: #0A192F;
-  text-align:center;
-  height:10vh
-}
-.myFooter p {
-  color: #fff;
-  font-family: sans-serif;
-  text-shadow: 1px 1px 0 rgb(0 0 0);
-}
-.myFooter a {
-  color: #00C58E;
-  text-decoration:none
-} */
+
 
 .logos{
   display: flex;
+  position:relative;
   justify-content: space-between;
 }
 .cimg{
