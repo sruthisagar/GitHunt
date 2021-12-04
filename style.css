@@ -13,7 +13,104 @@ body {
 header {  
   background-color: #141b25;
 }
-.main-nav {
+.nav {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1030;
+  height: 90px;
+  background: rgba(18, 16, 16, 0.35);
+  backdrop-filter: blur(9px);
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title >a{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "AstroSpace", sans-serif;
+  color: #fff;
+  /* padding: 10px 10px 10px 10px; */
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 22px;
+}
+
+.nav > .nav-links > a {
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.nav > .nav-links > a:hover {
+  color: #7ebcb9;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #7ebcb9;
+}
+
+/*.main-nav {
   position: fixed;
   top:0;
   right:0;
@@ -114,9 +211,10 @@ header {
     height: 10px;
 } */
 
+
 #login{
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+    height: 40px;
 }
 
 .learn-git{
@@ -185,7 +283,7 @@ header {
 .container{
     padding: 15%;
     position: relative;
-    height: 530px;
+    /* height: 530px; */
     
     /* background: #0B0F24; */
 }
@@ -251,7 +349,7 @@ header {
 p{
   position: static;
   /* width: 1050px; */
-  height: 304px;
+  /* height: 304px; */
   left: 195px;
   top: 371px;
 
@@ -301,8 +399,8 @@ p{
 
 #rules p{
   position: static;
-  width: 829px;
-  height: 532px;
+  max-width: 829px;
+  /* height: 532px; */ 
   left: 124px;
   top: 0px;
 
@@ -332,7 +430,7 @@ body {
   overflow-x: hidden;
 }
  .main-section {
-  float: left;
+  /* float: left; */
   width: 100%;
   display: block;
   background: url(Images/bluedots.png);
@@ -340,7 +438,7 @@ body {
 
 }
 .container {
-    float: left;
+    /* float: left; */
     width: 75%;
     /* margin: 2rem; */
 }
@@ -377,7 +475,7 @@ body {
 
 /** The Faq Section **/
     #faqSection div {
-  float: left;
+  /* float: left; */
   display: inline-block;
   width: 46%;
   margin: 0 2%;
@@ -454,4 +552,26 @@ body {
 #contact{
   background: url(Images/map.png);
     background-size: cover  ;
+}
+
+@media(min-width:600px){
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links{
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+@media(max-width:600px){
+  #rules{
+    display: flex;
+    flex-direction: column;
+
+  }
+  #rules p{
+    margin: 0;
+  }
 }
