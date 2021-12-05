@@ -1,168 +1,364 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GitHunt</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cantora+One"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHunt</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap" rel="stylesheet"/>
-</head>
+    <body>
+        <script type="text/javascript" src="script.js"></script>
+        <header>
+            <div class="nav">
+                <input type="checkbox" id="nav-check" />
+                <div class="nav-header">
+                    <div class="nav-title">
+                        <a href="#">GitHunt</a>
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
 
-<body>
-    <script type="text/javascript" src="script.js"></script>
-    <header>
-      <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            <a href="#">GitHunt</a>
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        
-        <div class="nav-links">
-          <a href="#about">ABOUT</a>
-          <a href="#rules" >RULES</a>
-          <a href="#faqs" >FAQ</a>
-          <a href="#contact">CONTACT</a>
-          <a><img id="login" src="Images/login.png"></a>
-      </div>
-        <!-- <nav class="main-nav">
-            <input type="checkbox" id="check" />
-            <label for="check" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="index.html" class="logo">GitHunt</a>
-            <ul class="navlinks">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Rules</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="login-icon"><img id="login" src="Images/login.png"></li>
-            </ul>
-        </nav> -->
-    </header>
-
-    <div id="hero" class="container">
-        <div>
-            <div class="learn-git">
-                Learn Git Through
+                <div class="nav-links">
+                    <a href="#about">ABOUT</a>
+                    <a href="#rules">RULES</a>
+                    <a href="#faqs">FAQ</a>
+                    <a href="#contact">CONTACT</a>
+                    <a><img id="login" src="Images/login.png" /></a>
+                </div>
             </div>
-            <div class="hero-githunt">
-                GitHunt
+        </header>
+
+        <section id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="learn-git">Learn Git Through</p>
+                        <p class="hero-githunt">GitHunt</p>
+                        <button class="start-learn">Start Learning</button>
+                    </div>
+
+                    <div class="hero-octocat">
+                        <img src="Images/astro.png" />
+                    </div>
+                </div>
             </div>
-            <button class="start-learn">Start Learning</button>
+            <div class="hero-curve"></div>
+        </section>
+
+        <section id="about">
+            <div class="about-container container">
+                <h2 class="gradient-heading">About GitHunt</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam aliquet, nisl sit amet rutrum fermentum, turpis odio
+                    faucibus erat, eu porttitor enim ligula at lorem. Vivamus eu
+                    mattis massa. Praesent at diam mauris. Maecenas bibendum
+                    mollis sodales. Nam ultrices pharetra arcu eget efficitur.
+                    Suspendisse aliquam malesuada convallis. Nullam a tortor vel
+                    nisi vestibulum feugiat in at magna. In eleifend est
+                    vehicula, rutrum velit ut, bibendum neque.
+                </p>
+            </div>
+        </section>
+
+        <section id="rules">
+            <div class="rules-container container">
+                <div class="rules-title">
+                    <h2>Rules</h2>
+                </div>
+                <div class="rules-description">
+                    <p>
+                        Rules to this is simple Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Etiam aliquet, nisl sit
+                        amet rutrum fermentum, turpis odio faucibus erat, eu
+                        porttitor enim ligula at lorem. Viva mus eu mattis
+                        massa. Praesent at diam mauris. Maecenas bibendum mollis
+                        sod ales. Nam ultrices pharetra arcu eget efficitur.
+                        Suspendisse aliquam malesuada convallis. Nullam a tortor
+                        vel nisi vestibulum feugiat in at magna. In eleifend est
+                        vehicula, rutrum velit ut, bibendum neque.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs">
+            <div class="faqs-container container">
+                <h2 class="line-heading">Frequently Asked Questions</h2>
+                <br />
+                <div id="faqSection" class="fullwidth-container">
+                    <div>
+                        <button class="collapsible">
+                            Do you work full time as a developer?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                        </div>
+                        <button class="collapsible">
+                            Do you require a deposit before working?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                        </div>
+                        <button class="collapsible">
+                            Will I own the website?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                        </div>
+                        <button class="collapsible">
+                            Are there other costs involved?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                            <ul>
+                                <li>Custom LI</li>
+                                <li>Custom LI</li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.Contact
+                                me via
+                                <a href="mailto:#" target="_blank">EMAIL</a> and
+                                I will be more than happy to answer your
+                                queries.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">
+                            What is hosting? Will I need it?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                            </p>
+                            <p>
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                        </div>
+                        <button class="collapsible">
+                            Will you work for equity on a new idea I have?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                            </p>
+                            <p>
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                        </div>
+                        <button class="collapsible">
+                            How much experience do you have?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                            </p>
+                        </div>
+                        <button class="collapsible">
+                            What if I need changes. Can I edit it myself?
+                        </button>
+                        <div class="faq-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Donec consequat neque eu odio
+                                convallis, porta consequat erat rhoncus.
+                                Curabitur vulputate porttitor lectus, vitae
+                                tincidunt dolor eleifend vitae. Praesent
+                                sollicitudin eros in finibus posuere. Quisque at
+                                turpis arcu. Sed condimentum elit ac elit
+                                rhoncus, volutpat feugiat orci accumsan.
+                            </p>
+                            <p>
+                                Maecenas tincidunt diam odio, sit amet tincidunt
+                                est tincidunt at. Suspendisse luctus dolor quis
+                                aliquam pulvinar. Ut non neque in lorem
+                                ullamcorper faucibus. In et neque in sem
+                                ultrices mattis. Duis eu mauris urna.
+                                Suspendisse vitae suscipit odio, suscipit
+                                convallis odio. Integer at consectetur sapien.
+                                Mauris ex tortor, gravida vel diam sit amet,
+                                congue ullamcorper enim. Curabitur viverra
+                                bibendum leo, et condimentum enim efficitur eu.
+                                Ut euismod finibus ligula at volutpat. Nulla sit
+                                amet sem non elit posuere fringilla in eu justo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="gradient-heading">Contact</h2>
+        </section>
+
+        <div id="sponsors">
+            <div class="container sponsors-container">
+                <div class="logos">
+                    <div>
+                        <img class="cimg" src="Images/mace.png" />
+                    </div>
+                    <div>
+                        <img class="cimg" src="Images/cs.png" />
+                    </div>
+                    <div>
+                        <img class="cimg" src="Images/ieee.png" />
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="Images/astro.png">
-        </div>
-    </div>
-
-    <img id="curve" src="Images/curve.png">
-
-    <div id="about" class="container">
-        <h2 class="gradient-heading">About GitHunt</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet, nisl sit amet rutrum fermentum,
-            turpis odio faucibus erat, eu porttitor enim ligula at lorem. Vivamus eu mattis massa. Praesent at diam
-            mauris. Maecenas bibendum mollis sodales. Nam ultrices pharetra arcu eget efficitur. Suspendisse aliquam
-            malesuada convallis. Nullam a tortor vel nisi vestibulum feugiat in at magna. In eleifend est vehicula,
-            rutrum velit ut, bibendum neque.
-        </p>
-    </div>
-
-    <div id="rules" class="container">
-        <div>
-            <h2>Rules</h2>
-        </div>
-        <div>
-            <p>
-                Rules to this is simple Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet, nisl sit
-                amet rutrum fermentum, turpis odio faucibus erat, eu porttitor enim ligula at lorem. Viva mus eu mattis
-                massa. Praesent at diam mauris. Maecenas bibendum mollis sod ales. Nam ultrices pharetra arcu eget
-                efficitur. Suspendisse aliquam malesuada convallis. Nullam a tortor vel nisi vestibulum feugiat in at
-                magna. In eleifend est vehicula, rutrum velit ut, bibendum neque.
-            </p>
-        </div>
-    </div>
-    <section class="main-section">
-        <div id="faqs" class="container">
-          <h2 class="line-heading">Frequently Asked Questions</h2><br>
-          <div id="faqSection" class="fullwidth-container">
-            <div>
-              <button class="collapsible">Do you work full time as a developer?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-              </div>
-              <button class="collapsible">Do you require a deposit before working?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-              </div>
-              <button class="collapsible">Will I own the website?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-              </div>
-              <button class="collapsible">Are there other costs involved?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan. Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-                <ul>
-                  <li>Custom LI</li>
-                  <li>Custom LI</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.Contact me via <a href="mailto:#" target="_blank">EMAIL</a> and I will be more than happy to answer your queries.</p>
-              </div>
-            </div>
-            <div>
-              <button class="collapsible">What is hosting? Will I need it?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                <p>Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-              </div>
-              <button class="collapsible">Will you work for equity on a new idea I have?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                <p>Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-              </div>
-              <button class="collapsible">How much experience do you have?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-              </div>
-              <button class="collapsible">What if I need changes. Can I edit it myself?</button>
-              <div class="faq-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat neque eu odio convallis, porta consequat erat rhoncus. Curabitur vulputate porttitor lectus, vitae tincidunt dolor eleifend vitae. Praesent sollicitudin eros in finibus posuere. Quisque at turpis arcu. Sed condimentum elit ac elit rhoncus, volutpat feugiat orci accumsan.</p>
-                <p>Maecenas tincidunt diam odio, sit amet tincidunt est tincidunt at. Suspendisse luctus dolor quis aliquam pulvinar. Ut non neque in lorem ullamcorper faucibus. In et neque in sem ultrices mattis. Duis eu mauris urna. Suspendisse vitae suscipit odio, suscipit convallis odio. Integer at consectetur sapien. Mauris ex tortor, gravida vel diam sit amet, congue ullamcorper enim. Curabitur viverra bibendum leo, et condimentum enim efficitur eu. Ut euismod finibus ligula at volutpat. Nulla sit amet sem non elit posuere fringilla in eu justo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-    <div id="contact" class="container">
-        <h2 class="gradient-heading">Contact</h2>
-        <div class="logos">
-            <div>
-                <img class="cimg" src="Images/mace.png">
-            </div>
-            <div>
-                <img class="cimg" src="Images/cs.png">
-            </div>
-            <div>
-                <img class="cimg" src="Images/ieee.png">
-            </div>
-        </div>
-    </div>
-
-</body>
-
+        <script src="./script.js"></script>
+    </body>
 </html>
