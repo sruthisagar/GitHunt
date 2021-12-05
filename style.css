@@ -118,6 +118,10 @@ header {
     border-bottom: 2px solid #7ebcb9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*.main-nav {
   position: fixed;
   top:0;
@@ -738,15 +742,15 @@ p {
     flex-direction: column;
 }
 
-/* sponsors section */
+/* contact section */
 
-#sponsors {
+#contact {
     background: url(Images/map.png);
     background-size: cover;
     height: 500px;
 }
 
-#sponsors {
+#contact {
     /* background: url(Images/map.png),
         linear-gradient(
             180deg,
@@ -769,7 +773,7 @@ p {
             );
 }
 
-.sponsors-container {
+.contact-container {
     height: 100%;
     display: flex;
     align-items: center;
